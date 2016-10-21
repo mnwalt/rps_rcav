@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2 col-xs-6">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h2 class="panel-title text-center">
+            Paper
+          </h2>
+        </div>
+        <div class="panel-body">
+          <img class="img-responsive" src="assets/images/paper.png">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xs-6">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h2 class="panel-title text-center">
+            <%= @computer_move_p.capitalize %>
+          </h2>
+        </div>
+        <div class="panel-body">
+          <img class="img-responsive" src="assets/images/<%= @computer_move_p %>.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="well text-center">
+        <h1>
+          <span class="label label-<%= @label_p %>">
+            You <%= @result_p %>!
+          </span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
